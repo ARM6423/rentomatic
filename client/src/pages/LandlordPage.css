@@ -1,0 +1,203 @@
+/* LandlordPage.css */
+
+.header {
+  background: url("../assets/tom-rumble-7-lvzop-txj-ou-unsplash-1.png");
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.taskbar {
+  /* Add your styles for the taskbar */
+  display: flex;
+  align-items: center;
+  background-color: black;
+  min-height: auto;
+  height: 4rem;
+  padding: 0.3rem;
+}
+
+.button {
+  /* Add your styles for the button */
+  background-color: transparent;
+  color: white;
+  border: 0;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.taskbar-center-container {
+  /* Add your styles for the taskbar center container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0.2 content;
+  margin: 0 auto;
+  /* keep in center */
+
+  /* Spacing between elements within container */
+}
+
+.taskbar .button {
+  /* Add your styles for the taskbar button */
+  background-color: transparent;
+  color: white;
+  border: solid 1px black;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0.5rem;
+  backface-visibility: hidden;
+  flex: 1;
+}
+
+.taskbar .button:hover {
+  border: #ff682c solid 1px;
+  color: #ff682c;
+  backface-visibility: hidden;
+  flex: 1;
+}
+
+.taskbar .button.selected,
+.button.selected:hover {
+  background-color: #ff682c;
+  color: white;
+  backface-visibility: hidden;
+}
+
+.taskbar-right-container {
+  /* Add your styles for the taskbar right container */
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  padding-right: 1%;
+}
+
+.body {
+  /* Add your styles for the body */
+  background-color: #ececec;
+  padding: 0.5rem 0.5rem;
+  display: flex;
+  height: 100vh;
+  padding-top: 0.3rem;
+  max-height: 100vh;
+}
+
+.left-container {
+  /* Add your styles for the left container */
+  margin: 0.5rem;
+  /* Take 50% of the available width */
+  width: 50%;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+}
+
+.ticket-filter-container {
+  /* Add your styles for the ticket filter container */
+  display: flex;
+  gap: 1rem;
+  margin: 0.5rem 0rem;
+}
+
+.ticket-filter-container .button {
+  /* Add your styles for the ticket filter */
+  background-color: white;
+  color: black;
+  border: black solid 1px;
+  flex: 1;
+  font-size: 1rem;
+  padding: 1rem 0.5rem; /* Modified padding */
+  backface-visibility: hidden;
+}
+
+.ticket-filter-container .button.selected,
+.ticket-filter-container .button.selected:hover {
+  /* Add your styles for the ticket filter */
+  background-color: #ff8c5e;
+}
+
+.ticket-filter-container .button:hover {
+  /* Add your styles for the ticket filter */
+  background-color: #ff8c5e80;
+  border: #ff8c5e solid 1px;
+}
+
+.ticket-list-container {
+  /* Add your styles for the ticket list container */
+  background-color: transparent;
+  flex: 0 1 auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+}
+
+.ticket-list {
+  flex: 1;
+  border-collapse: collapse;
+}
+
+.ticket-list th,
+.ticket-list td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.ticket-list th {
+  background-color: white;
+  font-weight: bold;
+}
+
+.ticket-list tr,
+.ticket-item {
+  max-height: 2rem;
+}
+
+.ticket-list tr:hover {
+  background-color: #f5f5f5;
+}
+
+.right-container {
+  /* align it to the right */
+  margin: 0.5rem;
+  /* Take 50% of the available width */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  /* Float the right container to the right */
+}
+
+.right-container-buttons {
+  /* Add your styles for the right container buttons */
+  flex: 0 0 auto;
+}
+
+.right-container-details {
+  /* Add your styles for the right container details */
+  background-color: white;
+  margin-top: 0.3rem;
+  flex: 1;
+  width: 100%;
+}
+
+.loginError{
+  /* Add your styles for the Error details */
+  background-color: pink;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  display: inline;
+  border-radius: 5px;
+  border: 3px solid rgba(164, 33, 56, 0.69);
+  font-weight: 400;
+  color:rgba(64, 9, 19, 0.69);
+  flex: 1;
+  width: 100%;
+}

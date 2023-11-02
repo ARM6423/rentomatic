@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.invoice {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.invoiceIcon {
+  width: 48px;
+}
+
+.ticketImage {
+  max-width: 75%;
+  max-height: 35vh;
+}
+
+.table .active {
+  --bs-table-bg:: #e9ecef;
+  background-color: #e9ecef;
+}
+
+.TandC{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.table-responsive table thead th {
+  /* position: sticky; */
+  position: -webkit-sticky;
+  top: 0;
+  background-color: #FFFFFF;
+}
+
+.tenant-left-container .ticket-list-container {
+  overflow-y:auto;
+}
+
+.tenant-left-container {
+  /* Add your styles for the left container */
+  margin: 0.5rem;
+  /* Take 50% of the available width */
+  width: 50%;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tenant-right-container {
+  /* align it to the right */
+  margin: 0.5rem;
+  /* Take 50% of the available width */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+  max-height: inherit;
+  flex:0 1 auto;
+  /* Float the right container to the right */
+}
+
+.tenant.right-container-details {
+  border-radius: 8px;
+  overflow-y: auto;
+}
+
+.tenant-right-container-buttons{
+  display:flex;
+  gap: 0.3rem;
+  margin:0.3rem;
+}
+
+
+.tenant-right-container-buttons .refreshButton:hover,
+.tenant-right-container-buttons .create-ticket-button:hover {
+  /* Add your styles for the ticket filter */
+  background-color: transparent;
+  border: #515151 solid 1px;
+}
+
+.tenant-right-ticket-buttons .refreshButton:hover,
+.tenant-right-ticket-buttons .create-ticket-button:hover {
+  /* Add your styles for the ticket filter */
+  background-color: transparent;
+  border: #515151 solid 1px;
+}
+
+
+.tenant-filter.ticket-filter-container {
+  /* Add your styles for the ticket filter container */
+  display: flex;
+  justify-content: space-between;
+  flex: 0 auto;
+}
+
+.page-tableFooter {
+  background-color: #fff;
+  padding: 8px 8px;
+  width: 100%;
+  font-weight: 500;
+  text-align: left;
+  font-size: 16px;
+  color: #2c3e50;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: flex;
+  flex: 0 1 auto;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.page_button {
+  border: none;
+  padding: 5px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.page_activeButton {
+  color: white;
+  background: #ff682c;
+}
+
+.page_inactiveButton {
+  color: #2c3e50;
+  background: #e9e8e8;
+}
+
+.table.list-table{
+  margin-bottom:0;
+}
+
+
+.body.settings{
+  padding:1rem 1.5rem;
+  gap:1rem;
+  
+}
+
+.tenantSignUpError {
+  margin:0rem 1.2rem;
+  color:red
+  
+}
+.tenantSignUpSuccess {
+  margin:0rem 1.2rem;
+  color:green
+  
+}
+
+.settings-left-container{
+  width: 60%;
+  max-width: 60%;
+}
+
+.settings-right-container{
+  width: 40%;
+  max-width: 40%;
+}
+
+.tenant_feedback{
+  color: #ff682c;
+  font-weight:600;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}

@@ -1,0 +1,98 @@
+.block-container {
+  display: flex;
+}
+
+.login-left-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.field_container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-container h1 {
+  align-self: flex-start;
+}
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-letters {
+  color: #ff5f1f;
+}
+
+.rest-letters {
+  color: black;
+}
+
+.last-letters {
+  color: white;
+}
+
+.left-h1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.login-right-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+}
+
+.image {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 70px;
+  z-index: 1;
+}
+.loginError{
+  /* Add your styles for the Error details */
+  background-color: pink;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  display: inline;
+  border-radius: 5px;
+  border: 3px solid rgba(164, 33, 56, 0.69);
+  font-weight: 400;
+  color:rgba(64, 9, 19, 0.69);
+  flex: 1;
+  width: 100%;
+}
